@@ -6,7 +6,7 @@ import jdk.nashorn.internal.objects.annotations.Setter;
 import java.io.Serializable;
 
 /**
- * Created by ChinhVD on 11/1/17.
+ * Created by ChinhVD on 11/21/17.
  */
 public class User implements Serializable{
     private int id;

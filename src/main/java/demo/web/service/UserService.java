@@ -6,7 +6,7 @@ import demo.web.model.User;
 import java.util.List;
 
 /**
- * Created by ChinhVD on 11/1/17.
+ * Created by ChinhVD on 11/21/17.
  */
 @Component
 public interface UserService {

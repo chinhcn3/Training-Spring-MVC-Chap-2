@@ -17,7 +17,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.util.Enumeration;
 
 /**
- * Created by ChinhVD on 11/1/17.
+ * Created by ChinhVD on 11/21/17.
  */
 @Controller
 public class LoginController {
