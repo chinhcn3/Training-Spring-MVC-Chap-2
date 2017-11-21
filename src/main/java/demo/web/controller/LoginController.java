@@ -2,6 +2,7 @@ package demo.web.controller;
 
 import demo.web.model.User;
 import demo.web.service.UserService;
+import demo.web.service.UserServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -22,11 +23,11 @@ import java.util.Enumeration;
 @Controller
 public class LoginController {
     @Autowired
-    private UserService userService;
+    private UserServiceImp userServiceImp;
 
     @PostMapping("/login")
     public String loginSubmit(Model model, @ModelAttribute("name") String name, @ModelAttribute("pass") String pass, RedirectAttributes redirect) {
-        User mUser = userService.getUserByLogin(name, pass);
+        User mUser = userServiceImp.getUserByLogin(name, pass);
         if (mUser == null || mUser.getId() <= 0) {
             redirect.addFlashAttribute("success", "Login fail!");
             return "redirect:/login";
